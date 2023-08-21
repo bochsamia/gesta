@@ -1,0 +1,66 @@
+<div style="margin-top: 50px;" align="center">
+    <h3> Gestion des données de l'administrateur </h3>
+
+    <form [formGroup]="profileForm" >
+
+<table style="margin-top: 80px;">
+<tr>
+    <td style="text-align: right;">
+<label>Initiales du membre &nbsp;</label>
+</td>
+<td>
+<input name="initiales" formControlName="initiales" type="text">
+<div *ngIf="profileForm.get('initiales').invalid && profileForm.get('initiales').touched">
+  Le nom est requis.
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td style="text-align: right;">
+<label>Prénom de l'administrateur &nbsp;</label>
+</td>
+<td>
+<input formControlName="prenomMembre" type="text">
+</td>
+</tr>
+
+
+<tr>
+
+<td style="text-align: right;">
+<label>Nom de l'administrateur &nbsp;</label>
+</td>
+
+<td>
+<input formControlName="nomMembre" type="text">
+</td>
+</tr>
+
+
+
+<tr>
+
+<td style="text-align: right;">
+<label>Mot de passe de l'administrateur &nbsp;</label>
+</td>
+
+<td>
+<input formControlName="motPasseMembre" type="password">
+</td>
+</tr>
+
+<tr>
+    <td style="text-align: right;">
+    <label> &nbsp;  </label>
+  </td>
+  <td >
+    <br/>&nbsp;&nbsp;
+    <button (click)="onSignUp()" class="btn btn-info">Enregistrer</button>
+  </td>
+  </tr>
+</table>
+
+</form>
+</div>

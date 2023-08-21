@@ -1,0 +1,206 @@
+
+ <div id="body" class="row">
+
+  
+    <div  align="center">
+      <div align="center" style="color: white; padding-top: 50px; font-family: cursive; padding-bottom: 50px;">
+
+
+
+      <div >  {{'HOME.enteryour' | translate}} <br> 
+        {{'HOME.pi' | translate}}   </div>  
+        <div style="padding-top: 30px;"  align="right"> {{'HOME.member' | translate}}  <button (click)="change2()" style="background-color: black !important; color:#C39C47 !important;" class="btn btn-default">{{'HOME.log' | translate}}</button>
+        </div> 
+             
+    
+
+    
+      </div>
+      
+    <form *ngIf="bool2" [formGroup]="logForm" >
+    <table  >
+        
+        <tr >
+            
+            <div dir="{{'HOME.dir' | translate}}" class="md-form"  >
+            
+              <input
+              style="color: white;    "
+              type="text"
+              id="defaultForm-email-signup"
+              [validateSuccess]="false"
+              [validateError]="true"
+              class="form-control validate"
+              mdbInputDirective
+              formControlName="emaillogin"
+                
+              />
+              <label style=" color: white; position: absolute;  margin-top: -13px;" for="defaultForm-email"><span style="font-size: 12px;">{{'HOME.yrmail' | translate}}</span></label>
+           
+            </div>
+          </tr>
+        
+        <tr>
+        
+            <div dir="{{'HOME.dir' | translate}}" style="margin-top: 31px; " class="md-form mb-5">
+              <input
+              style="color: white;  width: 200px;"
+                type="password"
+                id="defaultForm-email-signup"
+                [validateSuccess]="false"
+                [validateError]="true"
+             
+                
+                formControlName="passwordlogin"
+                class="form-control validate"
+                mdbInputDirective
+              />
+              <label style="color: white; position: absolute;  margin-top: -13px;" for="defaultForm-email"><span style="font-size: 12px;">{{'HOME.yrpwd' | translate}}</span></label>
+            </div>
+        </tr>
+        <tr style="padding-left: 70px;">
+            <button (click)="onConnect()" style="background-color: #C39C47 !important; color: white !important;" class="btn btn-default">{{'HOME.login' | translate}}</button>
+          </tr>
+        
+        
+    </table>
+  </form>
+  
+  <form  *ngIf="bool1"  [formGroup]="profileForm">
+    <table >
+        
+  <tr>
+    <td>
+    <div dir="{{'HOME.dir' | translate}}" class="md-form">
+      <input
+      style="color: white;  width: 200px;"
+      type="text"
+      id="defaultForm-email-signup"
+      [validateSuccess]="false"
+      [validateError]="true"
+      class="form-control validate"
+      mdbInputDirective
+      formControlName="username"
+        
+      />
+      <label style="color: white; position: absolute; margin-top: -13px;" for="defaultForm-email"
+        ><span style="font-size: 12px;">{{'HOME.username' | translate}}</span></label
+      >
+    </div>
+  </td>
+  <td>
+  
+    <div dir="{{'HOME.dir' | translate}}" style="margin-top: 31px; margin-left: 25px;" class="md-form mb-5">
+      <input
+      style="color: white;  width: 200px;"
+        type="email"
+        id="defaultForm-email-signup"
+        [validateSuccess]="false"
+        [validateError]="true"
+        
+        formControlName="prenom"
+        class="form-control validate"
+        mdbInputDirective
+      />
+      <label style="color: white; position: absolute; margin-top: -13px;" for="defaultForm-email"><span style="font-size: 12px;">{{'HOME.firstname' | translate}}</span></label>
+    </div>
+  </td>
+  
+  <td>
+  
+  
+  </td>
+  
+  </tr>
+  
+  <tr>
+    <td>
+    <div dir="{{'HOME.dir' | translate}}" class="md-form">
+      <input
+      style="color: white;  width: 200px;"
+      type="text"
+      id="defaultForm-email-signup"
+      [validateSuccess]="false"
+      [validateError]="true"
+      class="form-control validate"
+      mdbInputDirective
+      formControlName="nom"
+        
+      />
+      <label  style="color: white; position: absolute; margin-top: -13px;" for="defaultForm-email"
+        ><span style="font-size: 12px;">{{'HOME.lastname' | translate}}</span></label
+      >
+    </div>
+  </td>
+  <td>
+  
+    <div dir="{{'HOME.dir' | translate}}" style="margin-top: 31px; margin-left: 25px;" class="md-form mb-5">
+      <input
+      style="color: white; width: 200px;"
+        type="email"
+        id="defaultForm-email-signup"
+        [validateSuccess]="false"
+        [validateError]="true"
+        
+        formControlName="email"
+        class="form-control validate"
+        mdbInputDirective
+      />
+      <label style="color: white; position: absolute; margin-top: -13px;" for="defaultForm-email"><span style="font-size: 12px;">{{'HOME.yrmail' | translate}}</span></label>
+    </div>
+  </td>
+  </tr>
+  
+  <tr>
+    <td>
+    <div dir="{{'HOME.dir' | translate}}" class="md-form">
+      <input
+      style="color: white;  width: 200px;"
+      type="text"
+      id="defaultForm-email-signup"
+      [validateSuccess]="false"
+      [validateError]="true"
+      class="form-control validate"
+      mdbInputDirective
+      formControlName="phone"
+        
+      />
+      <label  style="color: white; position: absolute; margin-top: -13px;" for="defaultForm-email"
+        ><span style="font-size: 12px;">{{'HOME.phnumb' | translate}}</span></label
+      >
+    </div>
+  </td>
+  <td>
+  
+    <div dir="{{'HOME.dir' | translate}}" style="margin-top: 31px; margin-left: 25px;" class="md-form mb-5">
+      <input
+      style="color: white;  width: 200px;"
+        type="email"
+        id="defaultForm-email-signup"
+        [validateSuccess]="false"
+        [validateError]="true"
+        
+        formControlName="address"
+        class="form-control validate"
+        mdbInputDirective
+      />
+      <label style="color: white; position: absolute; margin-top: -13px;" for="defaultForm-email"><span style="font-size: 12px;">{{'HOME.adresse' | translate}}</span></label>
+    </div>
+    
+  </td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td></td>
+    <td >
+      <button (click)="information()" style="background-color: #C39C47 !important; color: white !important;" class="btn btn-default">{{'HOME.next' | translate}}</button>
+    </td>
+  </tr>
+  
+    </table>
+  </form>
+  </div>
+
+</div>

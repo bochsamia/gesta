@@ -1,0 +1,63 @@
+<div style="margin-top: 50px;" align="center">
+    <h3> Modification du mot de passe </h3>
+
+    <form [formGroup]="addUserFormm">
+
+<table style="margin-top: 80px;">
+<tr>
+    <td style="text-align: right;">
+<label>Vos Initiales &nbsp;</label>
+</td>
+<td>
+<input formControlName="initiales" type="text">
+</td>
+</tr>
+
+
+<tr>
+<td style="text-align: right;">
+<label>Mot de passe actuel &nbsp;</label>
+</td>
+<td>
+<input formControlName="ancienmdp" type="text">
+</td>
+</tr>
+
+
+<tr>
+
+<td style="text-align: right;">
+<label>Nouveau Mot de passe &nbsp;</label>
+</td>
+
+<td>
+<input formControlName="nvmdp" type="text">
+</td>
+</tr>
+
+
+
+<tr>
+
+<td style="text-align: right;">
+<label>Nouveau mot de passe (pour vérification) &nbsp;</label>
+</td>
+
+<td>
+<input formControlName="confirmPassword" type="password">
+</td>
+</tr>
+
+<tr>
+    <td style="text-align: right;">
+    <label> &nbsp;  </label>
+  </td>
+  <td >
+    <br/>&nbsp;&nbsp;
+    <button (click)="editpass()" class="btn btn-info">Enregistrer</button>
+  </td>
+  </tr>
+</table>
+
+</form>
+</div>

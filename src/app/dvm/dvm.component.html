@@ -1,0 +1,142 @@
+<h3 style="text-align: center; margin-top: 50px;"> Départ volontaire d'un membre</h3>
+<div style="margin-top: 70px; margin-bottom: 70px;" align="center">
+
+    <select style="position: absolute; bottom: 300px;" [(ngModel)]="val10"  (click)="getdv()" >
+        <ng-container *ngFor="let varia of alldoc">
+        <option   value="{{varia.idMembre}}"  >{{varia.idMembre}}</option>
+      </ng-container>
+      </select>
+    
+
+    <form [formGroup]="profileForm">
+
+<div style="margin-top: 50px;" align="center">
+    
+    <table>
+     <tr>
+         <td>
+     <label for="contactChoice1">Membres de l'AP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+     <input [(ngModel)]="membreAp" formControlName="membreAp" type="radio" id="contactChoice1"
+     name="contact" value="membreAp">
+ </td>
+</tr>
+<tr>
+<td>
+  
+     <label for="contactChoice2">Membres d'un CMS &nbsp;</label>
+     <input [(ngModel)]="membreCms" formControlName="membreCms" type="radio" id="contactChoice2"
+     name="contact" value="membreCms">
+     &nbsp;&nbsp;
+
+     Choix du CMS
+     <select>
+         <option>CP1</option>
+         <option>CT1</option>
+         <option>CP2</option>
+         <option>CT2</option>
+     </select>
+     &nbsp;&nbsp;
+     <input formControlName="inputCms" style="width: 120px;" type="text">
+     </td>
+ </tr>
+
+</table>
+
+<hr style="border: solid 1px; width: 40%;">
+
+<table style="margin-top: 30px;">
+ <tr>
+    <td style="text-align: right;">
+    <label>initiales du membre &nbsp;</label>
+</td>
+<td>
+  
+</td>
+    </tr>
+
+
+    <tr>
+        <td style="text-align: right;">
+<label>Prénom du membre &nbsp;</label>
+</td>
+<td>
+<input formControlName="prenomMembre" type="text">
+</td>
+</tr>
+
+<tr>
+    <td style="text-align: right;">
+<label>Nom du membre &nbsp;</label>
+</td>
+<td>
+<input formControlName="nomMembre" type="text">
+</td>
+</tr>
+
+
+<tr>
+
+    <td style="text-align: right;">
+<label>Adresse mail du membre &nbsp;</label>
+</td>
+
+<td>
+<input formControlName="adresseMailMembre" type="text">
+</td>
+</tr>
+
+
+
+
+
+<tr>
+    <td style="text-align: right;">
+<label>Est Administrateur &nbsp;</label>
+</td>
+
+<td>
+<input formControlName="estAdmin" style="width: 35px;" type="text"> (0 = non , 1 = oui)
+</td>
+</tr>
+
+<tr>
+    <td style="text-align: right;">
+<label>Est délégué &nbsp;</label>
+</td>
+
+<td>
+<input formControlName="delegue" style="width: 35px;" type="text"> (0 = non , 1 = oui)
+</td>
+</tr>
+
+<tr>
+    <td style="text-align: right;">
+<label>Son role actuel de délégué &nbsp;</label>
+</td>
+<td>
+<input formControlName="role" type="text">
+</td>
+ </tr>
+
+ <tr>
+    <td style="text-align: right;">
+    <label> &nbsp;  </label>
+  </td>
+  <td >
+    <br/>&nbsp;&nbsp;
+    <button (click)="newdv()" class="btn btn-info">Enregistrer le DV de ce membre</button>
+  </td>
+  </tr>
+  
+ </table>
+   </div>
+
+
+</form>
+
+
+
+
+
+
+

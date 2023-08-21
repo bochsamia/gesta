@@ -1,0 +1,80 @@
+<h3 style="text-align: center; margin-top: 50px;"> Liste des types d'infraction </h3>
+
+<div style="margin-top: 70px; margin-bottom: 70px;" align="center">
+
+  <label>Type d'infraction &nbsp; </label>
+
+  <select  (click)="getinf()" [(ngModel)]="val1" id="country" name="country">
+    <ng-container *ngFor="let ado of alldoc">
+    <option   value="{{ado.idInf}}"  >{{ado.idInf}}</option>
+  </ng-container>
+  </select>
+
+  <form [formGroup]="profileForm">
+  
+  <table>
+
+    <tr>
+<td style="text-align: right;">
+</td>
+<td >
+
+</td>
+</tr>
+
+<tr>
+  <td style="text-align: right;">
+  <label>Libellé du type d'infraction &nbsp; </label>
+</td>
+<td>
+  <input formControlName="libelleInf" type="text" disabled>
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Niveau de gravité &nbsp; </label>
+</td>
+<td>
+  <input formControlName="nivGrav" type="text" disabled>
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Maximum tous niveaux &nbsp; </label>
+</td>
+<td>
+  <input formControlName="maxNiv" type="text" disabled>
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Nombre d'infraction associé à ce type d'infraction &nbsp; </label>
+</td>
+<td>
+  <input formControlName="nbInf" type="text" disabled>
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+
+</table>
+</form>
+</div>

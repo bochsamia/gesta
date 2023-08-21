@@ -1,0 +1,252 @@
+{"HOME":{
+
+   "video":"assets/videomaktub.mp4",
+
+
+   "home":"HOME",
+   "about":"ABOUT US",
+   "cyo"  :"CREATE YOUR OWN",
+   "prods":"PRODUCTS",
+   "moncpte":"MY ACCOUNT",
+
+    "imgss":"/assets/gb.svg",
+    "textoo":"English",
+
+    "atc":"ADD TO CART",
+    "mc":"Maktub's card",
+    "cartes":"Cards",
+
+    "rfl":"Remove",
+
+    "ccc":"Choose Currency",
+
+
+
+    "follow":"You are now following ",
+    "followno":"You are not following now ",
+
+   
+      "dir":"ltr",
+   "log":"Sign in",
+    "up":"Sign up",
+   "search":"search",
+
+   "login":"login",
+
+   "eb":"E-Business cards meet the digital age",
+   "onee":"One E-business card, endless possibilities",
+   "mobility":"Mobility at its best",
+   "designyour":"Design your business card in 2 minutes - it's easy, elegant, and free. Maktub is always in your pocket, never crying, never running out. Your Maktub can be easily updated with our easy-to-use dashboard, so you'll never need to reprint your business card again.",
+   "expressyrslf":"Express yourself in ways that weren't possible before with a business card. Showcase your work by uploading rich content such as photos, videos, and custom links",
+   "thesh":"The shortest way to reach your customers is through their cell phones. Take advantage of our sharing options and make your brand viral by sharing your Maktub with your customers and friends.",
+   "readmr":"Read more",
+   "getth":"Get Those Clients On The Go!",
+   "welcto":"Welcome to Maktub for Online Trading and marketing",
+   "inspyr":"Inspire your customers digitally. Maktub is a smart, elegant, and affordable digital business card. Easy to handle and share with Impressive content and design.",
+   "getstrd":"Get Started",
+   "whorw":"Who Are We ?",
+   "mktbisone":"Maktub is one of the leading companies in the field of online trading and marketing. The company was established in 2021 in the State of Qatar, Al Wakra. Our activities are represented in the sale of electronic business cards through our website, which allows customers to choose several forms and impressive designs.",
+   "explmore":"Explore more",
+   "designview":"Design Views",
+   "happyc":"Happy Customers",
+   "totsh":"Total Shares",
+   "trees":"Trees Saved",
+   "ours":"Our Service",
+   "hiw":"How It Works ?",
+   "cust":"Customize your own e-business cards with a wide range of designs",
+   "addyrcnt":"Add your Content",
+   "saveon":"Save on your mobile or your device",
+   "share":"Share it with your friends and colleagues with NFC tag and social media",
+   "quick":"Quickly follow up with your contacts",
+   "whychoose":"Why Choose Us",
+   "canbe":"Can be shared with anyone, anywhere",
+   "weoff":"We offer the best prices for our customers",
+   "widerang":"Wide range of impressive rich content and designs",
+   "digbus":"digital business cards can be created on iOS, Android, or computer and can be fully customized to fit your style.",
+   "contus":"Contact Us",
+   "yrname":"Your Name",
+   "yrmail":"Your Email",
+   "yrpwd":"Your Password",
+   "yourmsg":"Your Message",
+   "send":"SEND",
+   "ourcli":"Our Clients",
+   "tried":"Tried, Tested and Trusted",
+   "continfos":"Contact Informations :",
+   "adr":"Maktub Qatar, Lusail, State of Qatar",
+   "salse":"sales@maktubqa.com",
+   "custsupp":"Customer Support",
+   "luhy":"Let Us Help You!",
+   "phnumb":"Phone number",
+   "copyright":"Copyright © All rights reserved | This website is made with by",
+
+   "sp":"Save Profile",
+   
+   
+   
+   "aboutdesc":"Maktub is one of the leading companies in the field of online trading and marketing. The company was established in 2021 in the State of Qatar, Al Wakra. Our activities are represented in the sale of electronic business cards through our website, which allows customers to choose several forms and impressive designs. Digital business cards are the modern way to share contact information. Digital business cards are also known as virtual and electronic business cards, and they are more interactive, cost-effective, and sustainable than their physical counterparts.",
+   "ourmission":"Our Mission",
+   "ourvis":"Our Vision",
+   "ourmissdesc":"Our mission is to make life easier, and your business grow with our modern service you can buy your comfort.",
+   "ourvisdesc":"Our Vision is to be the leading company in Qatar for online trading and marketing and to be known globally.",
+   
+   "cyoo":"Would you like to create your own and special Digital Business Card with your company logo? Send us a message and our team will get in touch with you!",
+   "fonction":"Function",
+   
+   "password":"Password",
+   "confirmpassword":"confirmpassword",
+   "username":"Username",
+   "firstname":"Firstname",
+   "lastname":"Lastname",
+   "email":"Email",
+   "adresse":"Address",
+
+   "enteryour":"Enter your informations to continue the order",
+   "pi": "Personal informations ",
+   "member":"Member ?",
+
+   "oi":"Order Confirmation ",
+
+   "next":"Next",
+   
+   "followers":"Followers",
+   "following":"Following",
+   "profil":"Profil",
+   "settings":"Settings",
+   "logoutt":"Logout",
+   "intro":"Intro",
+   "shlinks":"SHOW ALL LINKS",
+   "hide":"HIDE LINKS",
+   "chngcovr":"change cover picture",
+   "Confirmu":"Confirm update",
+   "account":"Account",
+   "purshased":"Purshased",
+
+
+   "dma":"Delete my account",
+
+   "csup":"your account has been successfully deleted",
+
+
+   "del":"Delete my account",
+
+
+   "evmdpact":"Enter your current password",
+   "vérifier":"check",
+
+
+
+   "esur":"are you sure you want to delete your account",
+
+   "ouii":"Yes",
+   "nonn":"No",
+
+
+   "pup":"Profile Updated",
+
+   "copied":"Copied",
+
+   "ld":"Link deleted",
+
+   "linkadd":"Links added successfully",
+
+   "uppass":"Update Password",
+
+   "cl":"Copy Link",
+
+   "passinc":"incorrect password",
+
+   "dontmatch":"Password does not match",
+
+   "cp":"Confirm Purshase",
+
+   "ps":"Profile Settings",
+
+   "thorder":"Thank You For Your Order!",
+   "maktub":"MAKTUB",
+
+   "unf":"User not found !",
+   
+   "twitter":"Twitter",
+   "facebook":"Facebook",
+   "youtube":"Youtube",
+   "instagram":"Instagram",
+   "skype":"Skype",
+   "linkedin":"Linkedin",
+   "snapshat":"Snapshat",
+   "google":"Google +",
+   "pinterest":"Pinterest",
+   "addnewlink":"ADD NEW LINK",
+   "newlink":"NEW LINK",
+   "addlin":"SAVE ALL LINKS",
+   "edit":"edit",
+   "oldpwd":"Old Password",
+   "newpwd":"New Password",
+   "confirmnpwd":"Confirm New Password",
+   "changep":"Change Picutre",
+   "ss13":"Account created successfully",
+   "pan":"Product added to cart successfully",
+   "photo":"Picutre has been updated",
+   "confirmpwd":"Confirm Password",
+   
+   
+   
+   "ss133":"Password changed successfully",
+   "pp3":"Password not changed"
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+}}

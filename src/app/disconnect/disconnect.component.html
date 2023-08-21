@@ -1,0 +1,31 @@
+
+<div class="container">
+  <h1>Déconnexion forcée d'un membre</h1>
+  <form (ngSubmit)="submitForm()">
+
+    <div class="input-group">
+      <label for="dropdown">Initiales de l'utilisateur à déconnecter:</label>
+      <select id="dropdown" name="dropdown" [(ngModel)]="selectedOption" (change)="updateMemberDetails()" >
+        <option value="">Sélectionnez un utilisateur</option>
+        <option *ngFor="let itm of members" [value]="itm.id_membre" >{{ itm.id_membre }}</option>
+      </select>
+    </div>
+
+    <div class="space">
+      <div *ngIf="selectedOption !== ''">
+        <div class="input-group" style="padding: 10px;">
+          <label for="input1">Prenom de l'utilisateur:</label>
+          <input type="text" id="input1" name="input1" [(ngModel)]="member.prenomMembre" placeholder="Enter Prenom..." [disabled]="true">
+        </div>
+
+        <div class="input-group" style="padding: 10px;">
+          <label for="input2">Nom de l'utilisateur:</label>
+          <input type="text" id="input2" name="input2" [(ngModel)]="member.nomMembre" placeholder="Enter Nom..." [disabled]="true">
+        </div>
+      </div>
+    </div>
+
+    <button (click)="disconnectMemb(member)" >Déconnecter cet utilisateur de GESTA</button>
+  </form>
+
+</div>

@@ -1,0 +1,20 @@
+
+<div id="body" class="row">
+<!-- partial:index.partial.html -->
+<div id="bg"></div>
+
+<form [formGroup]="adminForm">
+  <div class="form-field">
+    <input formControlName="emaillogin" type="email" placeholder="Email / Username" required/>
+  </div>
+  
+  <div class="form-field">
+    <input formControlName="passwordlogin" type="password" placeholder="Password" required/>                         </div>
+  
+  <div class="form-field">
+    <button (click)="onConnect()" class="btn" type="submit">Log in</button>
+  </div>
+</form>
+<!-- partial -->
+  
+</div>

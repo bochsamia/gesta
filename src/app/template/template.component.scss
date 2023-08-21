@@ -1,0 +1,23 @@
+div[id=body]{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background: linear-gradient(to bottom, #0f0c29, #604dea, #24243e);
+  }
+
+
+  .a {
+    border:1px solid white;
+    border-radius: 30px;
+    padding-right: 7px;
+    padding-left: 7px;
+
+  }
+
+  .a:hover{
+    background-color:#C39C47;
+ }

@@ -1,0 +1,76 @@
+<!--
+<div style=" margin-top: 55px;" class="footer">
+    <table >
+        <tr>
+            <td style="width: 70px;"></td>
+            <td><img src="assets/call.png"></td>
+            <td ><span style="font-size: 16px; font-weight: 600; font-family: Roboto;">24/7 {{'HOME.custsupp' | translate}}  </span> <br/><h2>{{'HOME.luhy' | translate}}  </h2></td>
+          
+          <td style="width: 500px;"></td>
+            <td >  
+                 <div class="md-form">
+                <input
+                style="color: black; width: 200px;"
+                type="email"
+                id="defaultForm-email-signup"
+                [validateSuccess]="false"
+                [validateError]="true"
+                class="form-control validate"
+                mdbInputDirective
+                
+                  
+                />
+                <label  data-error="wrong" data-success="right" for="orangeForm-name"
+                  ><span style="font-size: 12px;">{{'HOME.yrmail' | translate}}  / {{'HOME.phnumb' | translate}} </span></label
+                >
+              </div></td>
+              <td><button style="background-color: #C39C47 !important;" type="button" class="btn btn-secondary btn-sm">{{'HOME.send' | translate}}</button>
+              </td>
+        </tr>
+    </table>
+
+
+
+</div>
+-->
+
+<footer *ngIf="component != 'Appli'"  class="footer-07">
+    <div  class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <h2 class="footer-heading"><a href="#" class="logo"><img src="assets/maktub.png"></a></h2>
+                <table align="center" >
+                 <td>   <a  class="heading" [routerLink]="['']" (click)="scrollingg()">{{'HOME.home' | translate}}</a></td><td>&nbsp;&nbsp;</td><td>
+                    <a  class="heading" [routerLink]="['about']" (click)="scrollingg()">{{'HOME.about' | translate}}</a></td><td>&nbsp;&nbsp;</td><td>
+                    <a  class="heading" [routerLink]="['cyo']" (click)="scrollingg()">{{'HOME.cyo' | translate}}</a></td><td>&nbsp;&nbsp;</td><td>
+                    <a  class="heading" [routerLink]="['prods']" (click)="scrollingg()">{{'HOME.prods' | translate}}</a></td><td>&nbsp;&nbsp;</td><td>
+                    <a  class="heading" [routerLink]="['myaccount']" (click)="scrollingg()" >{{'HOME.moncpte' | translate}}</a></td><td>&nbsp;&nbsp;</td><td>
+                
+                </table>
+                <ul style="margin-top: 100px;" class="ftco-footer-social p-0">
+      <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i style="color: #C39C47; margin-top: 11px;" class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i style="color: #C39C47; margin-top: 11px;" class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i style="color: #C39C47; margin-top: 11px;" class="fa fa-instagram" aria-hidden="true"></i>
+      </a></li>
+    </ul>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12 text-center" >
+                <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+               &copy;<script>document.write(new Date().getFullYear());</script> {{'HOME.copyright' | translate}}  <a style="color: #C39C47;"  href="http://www.mosofty.com/" target="_blank">MoSofty</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+
+            <div  class="col-md-12 text-center">
+     
+              <img  [ngClass]="stg" src="assets/gp.png">
+              
+              <img  [ngClass]="std" src="assets/as.png">
+          </div>
+          
+        </div>
+    </div>
+    
+</footer>
+

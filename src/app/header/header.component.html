@@ -1,0 +1,365 @@
+
+    <header  style="background-color: white !important">
+
+
+      <form  [formGroup]="signinForm">
+      <div *ngIf="booltoken != true && component != 'Appli'" class="row"  style="padding-right: 7px;" >
+        <div class="col-7"></div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <!--
+    <div  *ngIf="booltoken || component === 'Profil'" class="row" dir="rtl" style="padding-right: 7px;" >
+
+
+
+
+      <div    class="sec-center">
+        <input  class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+        <label   style="width: 100px; height: 30px; background-color: black !important" class="for-dropdown" for="dropdown">
+          <i  style=" color: white;" class="fas fa-chevron-down"></i>
+
+          <img style="width: 70px; border-radius: 10px; margin-top: 40px;" [src]="imgprofil">
+
+        </label>
+
+        <div   dir="{{'HOME.dir' | translate}}" class="section-dropdown">
+          <a (click)="toprofil()" style="color: white;" class="headingg" id="newlab" > <i class="fas fa-user"></i>  {{'HOME.profil' | translate}} <i class="uil uil-arrow-right"></i></a>
+
+          <a [routerLink]="['managprofile']" style="color: white;" class="headingg" id="newlab" ><i class="fas fa-cog"></i> {{'HOME.settings' | translate}} <i class="uil uil-arrow-right"></i></a>
+          <a (click)="logout()" style="color: white;" class="headingg" id="newlab" ><i class="fas fa-key"></i>{{'HOME.logoutt' | translate}} <i class="uil uil-arrow-right"></i></a>
+        </div>
+
+
+      </div>
+
+
+
+
+  </div>
+
+
+
+   -->
+
+
+      <div *ngIf="component != 'Appli'" class="tb">
+
+        <div class="col-3" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+        <div class="col-3" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+
+
+
+
+
+    <div *ngIf="booltoken || component === 'Profil' && component != 'Appli'"  dir="rtl"  >
+
+      <div     class="dropdown">
+
+          <img [src]="imgprofil" style="width: 80px; border-radius: 30px;"  class="dropbtn" alt="Maktub" loading="lazy" >
+          <span  style="font-size: 10px; color: white;" >{{email}}</span>
+
+
+
+              <div  dir="{{'HOME.dir' | translate}}" class="dropdown-content ">
+
+                  <a  (click)="toprofil()" rel="noreferrer" >
+                    <i   class="fas fa-user"  ></i> {{'HOME.profil' | translate}}
+                  </a>
+                  <a   id="{{'HOME.a30' | translate}}" [routerLink]="['managprofile/profile']" rel="noreferrer" >
+                    <i class="fas fa-cog"  ></i><span> {{'HOME.settings' | translate}}</span>
+                  </a>
+                  <a id="{{'HOME.a35' | translate}}" (click)="logout()" rel="noreferrer" >
+                    <i class="fas fa-key"></i><span> {{'HOME.logoutt' | translate}} </span>
+                  </a>
+
+
+              </div>
+          </div>
+
+  </div>
+
+
+      </div>
+
+
+
+
+      <table *ngIf="component != 'Appli'" dir="{{'HOME.dir' | translate}}" style="margin-bottom: 40px;" align="center">
+        <tr>
+
+          <td      style="padding-top: 9px;   "  >
+
+            <div     class="dropdown">
+              <span style="background-color:   rgb(36, 129, 200);; color: white; padding: 10px 50px; border-radius: 5px;
+               line-height: 2; display: inline-block;">PARAMETRES</span>
+                              <span  style="font-size: 10px; color: white;" >{{email}}</span>
+
+
+
+                                  <div  dir="{{'HOME.dir' | translate}}" class="dropdown-content ">
+
+                                      <a  [routerLink]="['pag']" rel="noreferrer" >
+                                      PAG
+                                      </a>
+                                      <a   id="{{'HOME.a30' | translate}}" [routerLink]="['ltd']" rel="noreferrer" >
+                                       LTD
+                                      </a>
+                                      <a id="{{'HOME.a35' | translate}}" [routerLink]="['lti']" rel="noreferrer" >
+                                       LTI
+                                      </a>
+
+
+                                  </div>
+                              </div>
+
+          </td>
+
+          <td style="width: 15px;"></td>
+
+
+
+
+
+
+    <td       style="padding-top: 9px;   "  >
+
+      <div     class="dropdown">
+        <span style="background-color:   rgb(36, 129, 200);; color: white; padding: 10px 50px; border-radius: 5px;
+        line-height: 2; display: inline-block;">MEMBRES</span>
+                        <span  style="font-size: 10px; color: white;" >{{email}}</span>
+
+
+
+                            <div  dir="{{'HOME.dir' | translate}}" class="dropdown-content ">
+
+                                <a  [routerLink]="['lmb']" rel="noreferrer" >
+                                LMB
+                                </a>
+                                <a   id="{{'HOME.a30' | translate}}" [routerLink]="['ltd']" rel="noreferrer" >
+                                 TSC
+                                </a>
+                                <a id="{{'HOME.a35' | translate}}" [routerLink]="['lti']" rel="noreferrer" >
+                                 TSR
+                                </a>
+                                <a id="{{'HOME.a35' | translate}}" [routerLink]="['lti']" rel="noreferrer" >
+                                  ACR
+                                 </a>
+                                 <a id="{{'HOME.a35' | translate}}" [routerLink]="['lti']" rel="noreferrer" >
+                                  CAB
+                                 </a>
+                                 <a id="{{'HOME.a35' | translate}}" [routerLink]="['lti']" rel="noreferrer" >
+                                  SIM
+                                 </a>
+                                 <a id="{{'HOME.a35' | translate}}" [routerLink]="['lti']" rel="noreferrer" >
+                                  LIM
+                                 </a>
+                                 <a id="{{'HOME.a35' | translate}}" [routerLink]="['lti']" rel="noreferrer" >
+                                  ARS
+                                 </a>
+                                 <a id="{{'HOME.a35' | translate}}" [routerLink]="['Listmemb']" rel="noreferrer" >
+                                  Listes Memebres
+                                 </a>
+
+
+                            </div>
+                        </div>
+
+    </td>
+
+    <td style="width: 15px;"></td>
+
+
+    <td  [routerLink]="['cyo']"      style="padding-top: 9px;   "  >
+
+      <div     class="dropdown">
+        <span style="background-color:   rgb(36, 129, 200);; color: white; padding: 10px 50px; border-radius: 5px;
+        line-height: 2; display: inline-block;">DOCUMENTS</span>
+                        <span  style="font-size: 10px; color: white;" >{{email}}</span>
+
+
+
+                            <div  dir="{{'HOME.dir' | translate}}" class="dropdown-content ">
+
+                                <a  [routerLink]="['template']" rel="noreferrer" >
+                                PAG
+                                </a>
+                                <a   id="{{'HOME.a30' | translate}}" [routerLink]="['ltd']" rel="noreferrer" >
+                                 LTD
+                                </a>
+                                <a id="{{'HOME.a35' | translate}}" [routerLink]="['lti']" rel="noreferrer" >
+                                 LTI
+                                </a>
+
+
+                            </div>
+                        </div>
+    </td>
+
+    <td style="width: 15px;"></td>
+
+
+    <td [routerLink]="['about']"     style="padding-top: 9px;   "  >
+
+      <div     class="dropdown">
+        <span style="background-color:   rgb(36, 129, 200);; color: white; padding: 10px 50px; border-radius: 5px;
+               line-height: 2; display: inline-block;">SPR/RC</span>
+                        <span  style="font-size: 10px; color: white;" >{{email}}</span>
+
+
+
+                            <div  dir="{{'HOME.dir' | translate}}" class="dropdown-content ">
+
+                                <a  [routerLink]="['template']" rel="noreferrer" >
+                                PAG
+                                </a>
+                                <a   id="{{'HOME.a30' | translate}}" [routerLink]="['ltd']" rel="noreferrer" >
+                                 LTD
+                                </a>
+                                <a id="{{'HOME.a35' | translate}}" [routerLink]="['lti']" rel="noreferrer" >
+                                 LTI
+                                </a>
+
+
+                            </div>
+                        </div>
+
+    </td>
+
+    <td style="width: 15px;"></td>
+
+
+    <td  [routerLink]="['about']"     style="padding-top: 9px;   "  >
+
+      <div     class="dropdown">
+        <span style="background-color:   rgb(36, 129, 200);; color: white; padding: 10px 50px; border-radius: 5px;
+               line-height: 2; display: inline-block;">DS</span>
+                        <span  style="font-size: 10px; color: white;" >{{email}}</span>
+
+
+
+                            <div  dir="{{'HOME.dir' | translate}}" class="dropdown-content ">
+
+                                <a  [routerLink]="['template']" rel="noreferrer" >
+                                PAG
+                                </a>
+                                <a   id="{{'HOME.a30' | translate}}" [routerLink]="['ltd']" rel="noreferrer" >
+                                 LTD
+                                </a>
+                                <a id="{{'HOME.a35' | translate}}" [routerLink]="['lti']" rel="noreferrer" >
+                                 LTI
+                                </a>
+
+
+                            </div>
+                        </div>
+
+    </td>
+
+
+    <td style="width: 15px;"></td>
+
+
+    <td  [routerLink]="['about']"     style="padding-top: 9px;   "  >
+
+      <div     class="dropdown">
+        <span style="background-color:   rgb(36, 129, 200);; color: white; padding: 10px 50px; border-radius: 5px;
+        line-height: 2; display: inline-block;"> ADMINISTRATEUR</span>
+                        <span  style="font-size: 10px; color: white;" >{{email}}</span>
+
+
+
+                            <div  dir="{{'HOME.dir' | translate}}" class="dropdown-content ">
+
+                                <a  [routerLink]="['template']" rel="noreferrer" >
+                                PAG
+                                </a>
+                                <a   id="{{'HOME.a30' | translate}}" [routerLink]="['ltd']" rel="noreferrer" >
+                                 LTD
+                                </a>
+                                <a id="{{'HOME.a35' | translate}}" [routerLink]="['lti']" rel="noreferrer" >
+                                 LTI
+                                </a>
+
+
+                            </div>
+                        </div>
+
+    </td>
+
+
+
+<td>
+  <button (click)="logout()">logout</button>
+</td>
+
+
+
+        </tr>
+    </table>
+
+
+
+
+
+
+    <table *ngIf="component === 'Appli'" dir="{{'HOME.dir' | translate}}" style=" margin-bottom: 10px;">
+
+      <tr >
+
+        <td style="color: white; font-family: cursive; font-size: 20px;"  >
+          Maktub
+        </td>
+        </tr><tr >
+        <td>&nbsp;&nbsp;&nbsp;</td>
+
+
+          <td       (click)="change(1)" style=" padding-top: 9px;   "  >
+              <a style=" font-family: cursive; font-size: 10px;" rel="noreferrer"  >HOME&nbsp;
+                  </a></td>
+
+  <td       (click)="scrolltoabout(2)" style="padding-top: 9px;   "  >
+      <a  style="font-family: cursive; font-size: 10px;" rel="noreferrer" > ABOUT&nbsp;
+ </a></td>
+
+  <td       (click)="scrolltoserv(3)" style="padding-top: 9px;   "  >
+      <a  style="font-family: cursive; font-size: 10px;" rel="noreferrer" > CONTACT&nbsp;
+          </a></td>
+
+
+
+
+
+
+
+      </tr>
+
+  </table>
+
+
+
+
+
+
+
+
+
+
+  </form>
+    </header>
+
+
+
+
+

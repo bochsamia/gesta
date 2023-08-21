@@ -1,0 +1,94 @@
+<h3 style="text-align: center; margin-top: 50px;"> Gestion des données d'un membre</h3>
+<div style="margin-top: 70px; margin-bottom: 70px;" align="center">
+
+  <label>Initiales du membre &nbsp; </label>
+
+  <select [(ngModel)]="val10"  (click)="getmembre()" >
+    <ng-container *ngFor="let varia of alldoc">
+    <option   value="{{varia.idMembre}}"  >{{varia.idMembre}}</option>
+  </ng-container>
+  </select>
+
+  <form [formGroup]="profileForm">
+
+  <table>
+
+    <tr>
+      <td style="text-align: right;">
+      
+      </td>
+      <td>
+      
+      
+      </td>
+<td rowspan="5">
+  <button (click)="newmemb()" class="btn btn-info" style="width: 20em; font-size: 10px;">Ajouter Nouveau Membre</button> <br/><br/>
+  <button (click)="upmemb()" class="btn btn-info" style="width: 20em; font-size: 10px;">Modifier un Membre</button> <br/><br/>
+
+</td>
+</tr>
+
+<tr>
+  <td style="text-align: right;">
+  <label>Prénom du membre &nbsp; </label>
+</td>
+<td>
+  <input formControlName="prenomMembre" type="text">
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Nom du membre &nbsp; </label>
+</td>
+<td>
+  <input formControlName="nomMembre" type="text">
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Mot de passe du membre &nbsp; </label>
+</td>
+<td>
+  <input formControlName="motPasseMembre" type="text">
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Adresse Mail du membre &nbsp; </label>
+</td>
+<td>
+  <input formControlName="adresseMailMembre" type="text">
+</td>
+</tr>
+
+
+<tr>
+    <td style="text-align: right;">
+    <label>Est administrateur ? &nbsp; </label>
+  </td>
+  <td>
+    <input formControlName="estAdmin" type="text"> (0 = non , 1 = oui) 
+   
+  </td>
+  </tr>
+  
+
+
+
+
+<br><br><br><br>
+
+</table>
+
+</form>
+
+</div>

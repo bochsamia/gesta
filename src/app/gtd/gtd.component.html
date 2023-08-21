@@ -1,0 +1,289 @@
+<h3 style="text-align: center; margin-top: 50px;"> Gestion des types de document</h3>
+<div style="margin-top: 70px; margin-bottom: 70px;" align="center">
+
+  <label>Type de document &nbsp; </label>
+  <select  (click)="getdoc()" [(ngModel)]="val1" id="country" name="country">
+    <ng-container *ngFor="let ado of alldoc">
+    <option   value="{{ado.iddoc}}"  >{{ado.libelleTypeDocument}}</option>
+  </ng-container>
+  </select>
+  <form [formGroup]="profileForm">
+  <table>
+
+    <tr>
+<td style="text-align: right;">
+
+</td>
+<td>
+
+
+</td>
+<td rowspan="5">
+  <button (click)="newdoc()" class="btn btn-info" style="width: 20em; font-size: 10px;">Nouveau Type de document</button> <br/><br/>
+  <button (click)="updatedoc()" class="btn btn-info" style="width: 20em; font-size: 10px;">Modifier un Type de document</button> <br/><br/>
+  <button (click)="deletedoc()" class="btn btn-info" style="width: 20em; font-size: 10px;">Supprimer un Type de document</button>
+
+</td>
+</tr>
+
+<tr>
+  <td style="text-align: right;">
+  <label>Libellé du type de document &nbsp; </label>
+</td>
+<td>
+  <input formControlName="libelleTypeDocument" type="text">
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Texte de référence ? &nbsp; </label>
+</td>
+<td>
+  <input formControlName="texteReference" type="text">&nbsp; (0 = non  ; 1= oui)
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Dernier numéro utilisé pour ce type de document &nbsp; </label>
+</td>
+<td>
+  <input formControlName="dernierNumeroUtilise"  type="text">
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Type de document visé &nbsp; </label>
+</td>
+<td>
+  <input formControlName="typeDocumentVise" type="text">
+</td>
+</tr>
+
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Saisie de l'article visé dans le document visé ? &nbsp;</label>
+</td>
+<td>
+  <input formControlName="saisieArticleVise" type="text">&nbsp; (0 = non  ; 1= oui)
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Délai maximum pour le dépôt des EI visant un document de ce type &nbsp;</label>
+</td>
+<td>
+  <input formControlName="delaiMaxDepotEI" type="text"> &nbsp; heures (1000 pas de délai)
+</td>
+</tr>
+
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Délai maximum pour le dépôt des AM ou des SA visant un document de ce type &nbsp;</label>
+</td>
+<td>
+  <input formControlName="delaiMaxDepotAMSA" type="text">&nbsp;  heures (pour les PR et AM ; 10000 = pas de délai)
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Saisie du niveau obligatoire ? &nbsp;</label>
+  </td>
+<td>
+  <input formControlName="saisieNiveau" type="text"> (0 = non ; 1 = oui)
+</td>
+</tr>
+
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Niveau maximum qu'il est possible de saisir &nbsp; </label>
+</td>
+<td>
+  <input formControlName="niveauMax" type="text">
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Une EM est-elle prévue pour ce type de document ? &nbsp; </label>
+</td>
+<td>
+  <input formControlName="expressionMembresPrevue" type="text"> (0 = non ; 1 = oui)
+</td>
+</tr>
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Taux minimum pour le premier palier de la règle de décision &nbsp; </label>
+</td>
+<td>
+  <input formControlName="tauxMinPalier1Vmp" type="text">&nbsp; % &nbsp;
+
+  (utile essentiellement pour le SA)
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Durée de validité de ce premier palier (hors été) &nbsp;</label>
+</td>
+<td>
+  <input formControlName="nbHeuresPalier1Horsete" type="text"> &nbsp; heures
+</td>
+</tr>
+
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Durée de validité de ce premier palier (pendant l'été) &nbsp; </label>
+</td>
+<td>
+  <input formControlName="nbHeuresPalier1Ete" type="text">  &nbsp; heures
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Taux minimum pour le deuxième palier de la règle de décision &nbsp;</label>
+</td>
+<td>
+  <input formControlName="tauxMinPalier2Vmp" type="text"> &nbsp;
+  %
+&nbsp;
+(même valeur que le 1er palier
+= pas de 2ème palier)
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Durée de validité de ce deuxième palier &nbsp;</label>
+</td>
+<td>
+  <input formControlName="nbHeuresPalier2" type="text"> &nbsp; heures &nbsp; (99999 = pas de durée prévue pour ce 2ème palier)
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Taux minimum pour le troisième palier de la règle de décision &nbsp;</label>
+</td>
+<td>
+  <input formControlName="tauxMinPalier3Vmp" type="text">
+</td>
+</tr>
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Tout document de ce type doit-il être validé en SPR/RC ? &nbsp;</label>
+</td>
+<td>
+  <input formControlName="valideEnSprRc" type="text">
+</td>
+</tr>
+
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Délai minimum entre l'atteinte du seuil de décision et la validation en SPR/RC
+    
+
+   &nbsp;</label>
+</td>
+<td>
+  <input formControlName="delaiMinBalanceSprRc" type="text">
+</td>
+</tr>
+
+
+<tr>
+  <td style="text-align: right;">
+  <label> Nombre maximum de documents de ce type pouvant être refusés pendant
+    
+    <br>
+    la durée de référence ci-dessous et visant des PR ouvertes à l'EM  &nbsp;</label>
+</td>
+<td>
+  <input formControlName="nbmaxRefuses"  type="text">
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Durée de référence &nbsp;</label>
+</td>
+<td>
+  <input formControlName="dureeReference"  type="text">
+</td>
+</tr>
+
+
+<tr>
+    <td style="text-align: right;">
+    <label>
+        Durée de blocage pendant l'été &nbsp;</label>
+  </td>
+  <td>
+    <input formControlName="dureeBlocageEte" type="text">
+  </td>
+  </tr>
+
+
+  <tr>
+    <td style="text-align: right;">
+    <label>Un membre qui ne s'exprime pas au sujet d'un document
+        de ce type est-il considéré comme "non-exprimé" <br/> ce qui pourra l'amener à etre exclu temporairement ? &nbsp;</label>
+  </td>
+  <td>
+    <input formControlName="nonExpressionType"  type="text">
+  </td>
+  </tr>
+
+
+
+<br><br><br><br>
+
+</table>
+</form>
+</div>

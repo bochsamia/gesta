@@ -1,0 +1,40 @@
+<div style="margin-top: 50px;" align="center">
+
+    <form [formGroup]="profileForm">
+
+<table style="margin-top: 80px;">
+<tr>
+    <td style="text-align: right;">
+<label>Initiales du membre &nbsp;</label>
+</td>
+<td>
+<input formControlName="initiales" type="text">
+</td>
+</tr>
+
+
+
+<tr>
+
+<td style="text-align: right;">
+<label>Mot de passe de l'administrateur &nbsp;</label>
+</td>
+
+<td>
+<input formControlName="motPasseMembre" type="password">
+</td>
+</tr>
+
+<tr>
+    <td style="text-align: right;">
+    <label> &nbsp;  </label>
+  </td>
+  <td >
+    <br/>&nbsp;&nbsp;
+    <button (click)="onConnect()" class="btn btn-info">Connexion</button>
+  </td>
+  </tr>
+</table>
+
+</form>
+</div>

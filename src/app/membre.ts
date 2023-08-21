@@ -1,0 +1,36 @@
+export interface Membre {
+  id_membre: string;
+  initiales:string;
+  prenomMembre: string;
+  nomMembre: string;
+  motPasseMembre: string;
+  adresseMailMembre: string;
+  nbAcRefuses: number;
+  dateDebutComptageAcRefuses: Date;
+  dateDernierAcRefuse: Date;
+  blocageDepotAc: number  ;
+	dateFinBlocageDepotAc : Date ;
+	nbNonExpressions_1 : number  ;
+	nbNonExpressions_2 : number  ;
+	nbAvertissementsRecus : number  ;
+	excluTemp  : number ;
+	nbTotalExcluTemp : number   ;
+  dateExcluTemp  : Date ;
+	dateDerniereReintegration : Date ;
+  dateFinPrevueExcluTemp : Date  ;
+  excluInd   : number  ;
+	dateExcluInd : Date  ;
+	estAdmin    : number ;
+  estMembreActif   : number   ;
+	estAnimateurSprEnCours : number    ;
+  estGardienReglesSprEnCours   : number   ;
+	estSecretaireAp     : number ;
+  estAnimDesignations   : number   ;
+  tireSortAnimDesignations  : number    ;
+  estAnimateurProchSprAVenir  : number    ;
+  estGardienReglesProchSprAVenir   : number   ;
+  estSecretaireProchSprAVenir   : number   ;
+  estConnecte: number;
+  nbCms: number;
+  droitsRefusRestantsCms: number;
+}

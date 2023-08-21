@@ -1,0 +1,245 @@
+<h3 style="text-align: center; margin-top: 50px;"> Saisie des paramètres généraux</h3>
+<div style="margin-top: 70px; margin-bottom: 70px;" align="center">
+
+  <form [formGroup]="profileForm">
+
+  <table>
+
+    <tr>
+<td style="text-align: right;">
+  <label >Nombre maximum de  PR ouvertes aux modifications &nbsp;  </label>
+</td>
+<td>
+  <input formControlName="nbMaxPrModifiables" type="text">
+</td>
+</tr>
+
+<tr>
+  <td style="text-align: right;">
+  <label>Jour du début de l'été  &nbsp;</label>
+</td>
+<td>
+  <input formControlName="jourDebutEte" type="text">
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Mois du début de l'été &nbsp; </label>
+</td>
+<td>
+  <input formControlName="moisDebutEte" type="text">
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Jour de la fin de l'été &nbsp;</label>
+</td>
+<td>
+  <input formControlName="jourFinEte" type="text">
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Mois de la fin de l'été &nbsp;</label>
+</td>
+<td>
+  <input formControlName="moisFinEte" type="text">
+</td>
+</tr>
+
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Durée maximum de l'expression au sujet d'un AM &nbsp;</label>
+</td>
+<td>
+  <input formControlName="dureeMaxDiscussionAm" type="text"> &nbsp; heures
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Délai maximum pour le dépôt d'une PR actualisée après que son dépôt est devenu possible &nbsp;</label>
+</td>
+<td>
+  <input formControlName="delaiMaxDepotPrAct" type="text">&nbsp; heures
+</td>
+</tr>
+
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Délai maximum pour le dépôt d'un AM actualisé après que son dépôt est devenu possible &nbsp;</label>
+</td>
+<td>
+  <input formControlName="delaiMaxDepotAmAct" type="text">&nbsp; heures
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Quorum requis pour une SPR régulière &nbsp;</label>
+  </td>
+<td>
+  <input formControlName="quorumSprReguliere" type="text"> &nbsp; participants
+</td>
+</tr>
+
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Quorum requis pour une RC  &nbsp;</label>
+</td>
+<td>
+  <input formControlName="quorumReqRc" type="text"> &nbsp; participants
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Libellé pour une SPR régulière &nbsp; </label>
+</td>
+<td>
+  <input formControlName="libelleSprReguliere" type="text">
+</td>
+</tr>
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Quorum requis pour une SPR de discussion au fond &nbsp; </label>
+</td>
+<td>
+  <input formControlName="quorumSprDFond" type="text"> &nbsp; %
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Remise en question de l'expression des membres hors SPR/ RC &nbsp; </label>
+</td>
+<td>
+  <input formControlName="remiseQuestionDiscussionHorsSprRc" type="text"> &nbsp; 0 = non  ; 1= oui 
+</td>
+</tr>
+
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Quorum requis pour une SPR de discussion au fond systématique &nbsp; </label>
+</td>
+<td>
+  <input formControlName="quorumSprRcDFondSystematique" type="text"> &nbsp; %
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Durée de la période de comptage des non-expressions  &nbsp;</label>
+</td>
+<td>
+  <input formControlName="dureePeriodeComptageNonExpressions" type="text"> &nbsp; jours
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Nombre maximum de non-expressions aux EM (PR, AM et SA) par membre  &nbsp;</label>
+</td>
+<td>
+  <input formControlName="nbmaxNonExpressionsParmembre" type="text">
+</td>
+</tr>
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Un "non-exprimé" à une VA est-il compté parmi les "non-exprimés" ? &nbsp; 0 = non  ; 1= oui </label>
+</td>
+<td>
+  <input formControlName="nonExprimeExpa" type="text">
+</td>
+</tr>
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Nombre maximum d'avertissements qu'un membre peut recevoir avant son exclusion temporaire &nbsp;</label>
+</td>
+<td>
+  <input formControlName="nbmaxAvertissements" type="text">
+</td>
+</tr>
+
+
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Nombre maximum d'exclusions termporaires avant l'exclusion indéfinie  &nbsp; </label>
+</td>
+<td>
+  <input formControlName="nbmaxExclusion" type="text"> &nbsp; jours
+</td>
+</tr>
+
+
+<tr>
+  <td style="text-align: right;">
+  <label>Durée d'une exclusion temporaire &nbsp;  </label>
+</td>
+<td>
+  <input formControlName="dureeExclusionTemporaire" type="text"> &nbsp; jours
+</td>
+</tr>
+
+
+<tr>
+    <td style="text-align: right;">
+    <label> &nbsp;  </label>
+  </td>
+  <td >
+    <br/>&nbsp;&nbsp;
+    <button (click)="newpar()" class="btn btn-info">Enregistrer</button>
+  </td>
+  </tr>
+  
+
+
+
+<br><br><br><br>
+
+
+</table>
+</form>
+</div>

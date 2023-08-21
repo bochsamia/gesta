@@ -1,0 +1,8 @@
+{
+    "/*": {
+    "target": "https://maktubqa.com:9301",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+    }
+}
